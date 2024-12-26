@@ -15,6 +15,10 @@ from .hparams import HParams
 from .lcfm import CFM, IRMAE, LCFM
 from .univnet import UnivNet
 
+import pathlib
+temp = pathlib.PosixPath
+pathlib.PosixPath = pathlib.WindowsPath
+
 logger = logging.getLogger(__name__)
 
 
